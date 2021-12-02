@@ -31,6 +31,11 @@ extension PersonsListViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellName, for: indexPath)
+        var contentCell = cell.defaultContentConfiguration()
+        
+        contentCell.text = arContacts[indexPath.row].fullName
+        
+        cell.contentConfiguration = contentCell
         
         return cell
     }
