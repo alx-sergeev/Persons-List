@@ -16,6 +16,7 @@
 		3FC9DA502758F73F00117BFD /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC9DA4F2758F73F00117BFD /* DataManager.swift */; };
 		3FC9DA522759062300117BFD /* PersonsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC9DA512759062300117BFD /* PersonsListViewController.swift */; };
 		3FC9DA542759107F00117BFD /* PersonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC9DA532759107F00117BFD /* PersonDetailViewController.swift */; };
+		3FC9DA5627592B3F00117BFD /* ContactsInfoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC9DA5527592B3F00117BFD /* ContactsInfoListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		3FC9DA4F2758F73F00117BFD /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		3FC9DA512759062300117BFD /* PersonsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListViewController.swift; sourceTree = "<group>"; };
 		3FC9DA532759107F00117BFD /* PersonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailViewController.swift; sourceTree = "<group>"; };
+		3FC9DA5527592B3F00117BFD /* ContactsInfoListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsInfoListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			children = (
 				3FC9DA512759062300117BFD /* PersonsListViewController.swift */,
 				3FC9DA532759107F00117BFD /* PersonDetailViewController.swift */,
+				3FC9DA5527592B3F00117BFD /* ContactsInfoListTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 			files = (
 				3FC9DA502758F73F00117BFD /* DataManager.swift in Sources */,
 				3FC9DA522759062300117BFD /* PersonsListViewController.swift in Sources */,
+				3FC9DA5627592B3F00117BFD /* ContactsInfoListTableViewController.swift in Sources */,
 				3FC9DA542759107F00117BFD /* PersonDetailViewController.swift in Sources */,
 				3FC9DA352758F3F400117BFD /* AppDelegate.swift in Sources */,
 				3FC9DA4E2758F61400117BFD /* Person.swift in Sources */,
