@@ -28,9 +28,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="hI3-AT-Yzt" kind="show" identifier="toDetailContact" id="Wzr-SF-Ie2"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -47,6 +44,7 @@
                     <navigationItem key="navigationItem" title="Persons List" id="C3j-RT-9MK"/>
                     <connections>
                         <outlet property="tableView" destination="qN9-gc-7Na" id="qh8-5f-e0X"/>
+                        <segue destination="hI3-AT-Yzt" kind="show" identifier="toDetailContact" id="j9c-Q5-IQu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -86,6 +84,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="JIf-cH-Zsf"/>
+                    <connections>
+                        <outlet property="contactEmail" destination="NmD-hy-T1B" id="ZUX-vL-XVj"/>
+                        <outlet property="contactPhone" destination="dS0-Eg-WXJ" id="mGR-iv-rBh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jv2-Iv-q18" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

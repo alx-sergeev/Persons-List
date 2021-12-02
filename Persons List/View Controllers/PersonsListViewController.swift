@@ -15,16 +15,26 @@ class PersonsListViewController: UIViewController {
     // MARK: - Properties
     let cellName = "contactCell"
     let arContacts = Person.getContactsList()
+    let segueToContact = "toDetailContact"
+    var selectContact: Person? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.dataSource = self
+        tableView.delegate = self
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard segue.identifier == segueToContact else { return }
+        guard let detailContactVC = segue.destination as? PersonDetailViewController else { return }
+        guard let contact = selectContact else { return }
+        
+        detailContactVC.currentContact = contact
+    }
 }
 
-extension PersonsListViewController: UITableViewDataSource {
+extension PersonsListViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arContacts.count
     }
@@ -38,5 +48,13 @@ extension PersonsListViewController: UITableViewDataSource {
         cell.contentConfiguration = contentCell
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        selectContact = arContacts[indexPath.row]
+        
+        performSegue(withIdentifier: segueToContact, sender: nil)
     }
 }
