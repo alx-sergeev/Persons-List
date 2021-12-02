@@ -28,6 +28,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="hI3-AT-Yzt" kind="show" identifier="toDetailContact" id="Wzr-SF-Ie2"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -49,6 +52,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="945" y="54"/>
+        </scene>
+        <!--Person Detail View Controller-->
+        <scene sceneID="ROD-IA-HTI">
+            <objects>
+                <viewController id="hI3-AT-Yzt" customClass="PersonDetailViewController" customModule="Persons_List" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kIw-TP-yir">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dS0-Eg-WXJ">
+                                <rect key="frame" x="16" y="130" width="382" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NmD-hy-T1B">
+                                <rect key="frame" x="16" y="182" width="382" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jnj-O5-iXv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NmD-hy-T1B" firstAttribute="leading" secondItem="jnj-O5-iXv" secondAttribute="leading" constant="16" id="J0X-4h-2Ek"/>
+                            <constraint firstItem="dS0-Eg-WXJ" firstAttribute="leading" secondItem="jnj-O5-iXv" secondAttribute="leading" constant="16" id="J27-k6-cMk"/>
+                            <constraint firstItem="NmD-hy-T1B" firstAttribute="top" secondItem="dS0-Eg-WXJ" secondAttribute="bottom" constant="30" id="io3-x3-Pg2"/>
+                            <constraint firstItem="jnj-O5-iXv" firstAttribute="trailing" secondItem="NmD-hy-T1B" secondAttribute="trailing" constant="16" id="qCe-f2-Hpj"/>
+                            <constraint firstItem="jnj-O5-iXv" firstAttribute="top" secondItem="dS0-Eg-WXJ" secondAttribute="top" constant="10" id="qwP-id-Y3g"/>
+                            <constraint firstItem="jnj-O5-iXv" firstAttribute="trailing" secondItem="dS0-Eg-WXJ" secondAttribute="trailing" constant="16" id="vgx-2v-Eul"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="JIf-cH-Zsf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jv2-Iv-q18" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1708.6956521739132" y="53.571428571428569"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LAa-7D-2Kq">
