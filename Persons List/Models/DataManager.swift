@@ -45,7 +45,7 @@ class DataManager {
         "myemail_10@mail.ru"
     ]
     
-    static let arPhones = [
+    static let arPhone = [
         "453199527",
         "837166287",
         "958257578",

@@ -9,25 +9,25 @@
 /* Begin PBXBuildFile section */
 		3FC9DA352758F3F400117BFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC9DA342758F3F400117BFD /* AppDelegate.swift */; };
 		3FC9DA372758F3F400117BFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC9DA362758F3F400117BFD /* SceneDelegate.swift */; };
-		3FC9DA392758F3F400117BFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC9DA382758F3F400117BFD /* ViewController.swift */; };
 		3FC9DA3C2758F3F400117BFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FC9DA3A2758F3F400117BFD /* Main.storyboard */; };
 		3FC9DA3E2758F3F600117BFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FC9DA3D2758F3F600117BFD /* Assets.xcassets */; };
 		3FC9DA412758F3F600117BFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FC9DA3F2758F3F600117BFD /* LaunchScreen.storyboard */; };
 		3FC9DA4E2758F61400117BFD /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC9DA4D2758F61400117BFD /* Person.swift */; };
 		3FC9DA502758F73F00117BFD /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC9DA4F2758F73F00117BFD /* DataManager.swift */; };
+		3FC9DA522759062300117BFD /* PersonsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC9DA512759062300117BFD /* PersonsListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3FC9DA312758F3F400117BFD /* Persons List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Persons List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FC9DA342758F3F400117BFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FC9DA362758F3F400117BFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3FC9DA382758F3F400117BFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3FC9DA3B2758F3F400117BFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FC9DA3D2758F3F600117BFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FC9DA402758F3F600117BFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FC9DA422758F3F600117BFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FC9DA4D2758F61400117BFD /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		3FC9DA4F2758F73F00117BFD /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		3FC9DA512759062300117BFD /* PersonsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +91,7 @@
 		3FC9DA4A2758F45E00117BFD /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				3FC9DA382758F3F400117BFD /* ViewController.swift */,
+				3FC9DA512759062300117BFD /* PersonsListViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -184,8 +184,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FC9DA392758F3F400117BFD /* ViewController.swift in Sources */,
 				3FC9DA502758F73F00117BFD /* DataManager.swift in Sources */,
+				3FC9DA522759062300117BFD /* PersonsListViewController.swift in Sources */,
 				3FC9DA352758F3F400117BFD /* AppDelegate.swift in Sources */,
 				3FC9DA4E2758F61400117BFD /* Person.swift in Sources */,
 				3FC9DA372758F3F400117BFD /* SceneDelegate.swift in Sources */,

@@ -15,3 +15,17 @@ struct Person {
         "\(name) \(lastName)"
     }
 }
+
+extension Person {
+    static func getContactsList() -> [Person] {
+        var persons: [Person] = []
+        
+        for i in 0..<DataManager.arName.count {
+            persons.append(
+                Person(name: DataManager.arName[i], lastName: DataManager.arLastName[i], phone: DataManager.arPhone[i], email: DataManager.arEmail[i])
+            )
+        }
+        
+        return persons
+    }
+}
