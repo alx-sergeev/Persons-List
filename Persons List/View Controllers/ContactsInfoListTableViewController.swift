@@ -27,18 +27,18 @@ extension ContactsInfoListTableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 2
     }
-    
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellName, for: indexPath)
         var contentCell = cell.defaultContentConfiguration()
         
-        let curSect = indexPath.section
-        let curRow = indexPath.row
-        if curRow == 0 {
-            contentCell.text = arContacts[curSect].phone
+        let person = arContacts[indexPath.section]
+        switch indexPath.row {
+        case 0:
+            contentCell.text = person.phone
             contentCell.image = UIImage(named: "phone")
-        } else if curRow == 1 {
-            contentCell.text = arContacts[curSect].email
+        default:
+            contentCell.text = person.email
             contentCell.image = UIImage(named: "email")
         }
         
@@ -52,6 +52,6 @@ extension ContactsInfoListTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return arContacts[section].fullName
+        arContacts[section].fullName
     }
 }
