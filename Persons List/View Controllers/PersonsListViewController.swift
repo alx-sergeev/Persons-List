@@ -13,10 +13,10 @@ class PersonsListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     // MARK: - Properties
-    let cellName = "contactCell"
-    let arContacts = Person.getContactsList()
-    let segueToContact = "toDetailContact"
-    var selectContact: Person? = nil
+    private let cellName = "contactCell"
+    private let arContacts = Person.getContactsList()
+    private let segueToContact = "toDetailContact"
+    private var selectContact: Person? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -10,8 +10,8 @@ import UIKit
 class ContactsInfoListTableViewController: UITableViewController {
     
     // MARK: - Properties
-    let cellName = "contactInfoCell"
-    let arContacts = Person.getContactsList()
+    private let cellName = "contactInfoCell"
+    private let arContacts = Person.getContactsList()
     
     override func viewDidLoad() {
         super.viewDidLoad()
